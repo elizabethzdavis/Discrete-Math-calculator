@@ -1,0 +1,23 @@
+//Elizabeth Davis
+
+To Run:
+Compile and run by typing in these commands:
+javac Homework5.java
+java Homework5
+
+Then follow the directions prompted by the screen 
+
+To see values:
+
+The values are printed out by the program when it runs 
+
+Description of each method:
+
+main: creates a new scanner to get inputs from the user, then starts a while loop to continuously ask the user which function they want to create, prompting them with the options and told how to select each one. Depending on their function choice, they input the numbers needed and the function is executed and result is printed on the screen
+
+shift cipher: Takes in the int shifted (x), the amount shifting by int (s) and finds it on some int m sized set. To shift, x+s is calculated and divided by m. The remainder of that is new integer. This is calculated by (x+s) % m in java. 
+
+gcd: To calculate the greatest common divider of two integers, Euclidean’s algorithm is used, which continuously calculates the greater number rem smaller number until that is equal to zero. This is done with a while loop and calculates (a rem b).
+	However, the inputs must be in the order of greater number first, so if the first input is smaller, there is a parameter to check and then swap them
+
+multiplicative cipher: Similar to the first encryption, this takes in the shifted integer (a) and multiplies it by integer (b) and then finds in on some int m sized set. To do this though, a can not share a multiple of m greater than 1. So, the gcd is calculated of a and m and if it is not 1, then the user is prompted to restart. Otherwise the shift is calculated in a similar fashion of (a * b) % m. 
